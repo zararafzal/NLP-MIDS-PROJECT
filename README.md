@@ -10,3 +10,5 @@ pinned: false
 ---
 
 ### Image to Text Application
+
+## NLP project for Mids
