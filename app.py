@@ -12,7 +12,7 @@ st.markdown("## Optical Character Recognition")
 #image uploader
 image = st.file_uploader(label = "Upload your image here",type=['png','jpg','jpeg'])
 
-@st.cache
+@st.cache_data
 def load_model(): 
     reader = ocr.Reader(['en'],model_storage_directory='.')
     return reader 
@@ -24,7 +24,7 @@ if image is not None:
     input_image = Image.open(image) #read image
     st.image(input_image) #display image
 
-    with st.spinner("🤖 AI is at Work! "):
+    with st.spinner("Your image is being processed... "):
         
 
         result = reader.readtext(np.array(input_image))
