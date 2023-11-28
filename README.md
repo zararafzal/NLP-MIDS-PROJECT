@@ -9,5 +9,4 @@ app_file: app.py
 pinned: false
 ---
 
-# image2textapp
-demo of 🤗 spaces deployment of a streamlit python app
+### Image to Text Application
